@@ -858,5 +858,8 @@ iframe {
 .container-gent {
     margin-top: 50px;
 }
+.gentlist-mobile {
+    width: 300px;
+}
 }
 
