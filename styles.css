@@ -696,6 +696,10 @@ iframe {
         color: white;
         font-weight: bold;
     }
+     .nostyle {
+        color: white;
+        font-weight: bold;
+    }
     
     .form-cont {
         width: 350px;
