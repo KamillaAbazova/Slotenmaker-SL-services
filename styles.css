@@ -1,0 +1,857 @@
+@import url('https://fonts.cdnfonts.com/css/adobe-garamond-pro-2');
+
+body {
+    background-image: url("https://i.pinimg.com/236x/68/00/4b/68004b2dd291376483171101e639f29a.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-cont {
+    background-image: url("lock999.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    margin-left: 0;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+}
+.nav {
+    color: #0D1282;
+    padding: 10px;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+nav {
+    margin-top: 42px;
+}
+.nav:hover {
+    color: #D71313;
+}
+.home, .about, .services, .contacts {
+    background-color: #91C8E4;
+}
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+.burger span {
+    height: 4px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #000;
+    margin-top: 80px;
+}
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.3s ease 0s;
+}
+.burger::before {
+    top: 40px;
+}
+.burger::after{
+    bottom: -40px;
+}
+.burger.active span {
+    transform: scale(0);
+}
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+.callNow {
+    width: 250px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #fed101;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-size: 18px;
+}
+.callNow:hover {
+    background-color: #0D1282;
+}
+.phone {
+    text-decoration: none;
+    color: black;
+}
+.phone:hover {
+    color: #fefefc;
+}
+.bel {
+    color: #D71313;
+}
+.main-cont {
+    display: flex;
+    justify-content: space-around;
+}
+.header-cont {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.form-cont {
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-header {
+    padding: 10px;
+    background-color: #fed101;
+    margin-top: 0;
+    letter-spacing: 3px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+h1 {
+    color:#fefefc;
+    font-size: 50px;
+    align-self: self-start;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.sloten {
+    color: #fed101;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.description {
+    color: white;
+    font-size: 22px;
+    align-self: flex-start;
+    background-color: #D71313;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+li {
+    color: #91C8E4;
+    font-size: 22px;
+    list-style: none;
+    padding: 10px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.buttons-cont {
+    display: flex;
+    align-self: center;
+}
+.btn-whatsapp {
+    background-color: #fed101;
+    width: 80px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.btn-whatsapp:hover {
+    width: 100px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+}
+label {
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+input {
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+    border-style: groove;
+}
+.text-input {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: groove;
+}
+.btn-submit {
+    background-color: #fed101;
+    border: none;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-size: 18px;
+}
+.btn-submit:hover {
+    color: #fefefc;
+    background-color: black;
+}
+.logo {
+    display: flex;
+}
+.name {
+    color: #D71313;
+    font-size: 30px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.lock {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.experience-cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.experience {
+    width: 500px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.par {
+    width: 500px;
+    color: black;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.lock-photo1, .lock-photo2 {
+    position: relative;
+}
+.lock-photo2 {
+    top: -280px;
+    left: 300px;
+    box-shadow: 20px 20px 2px 0px #fed101;
+}
+.lock-photo1 {
+    box-shadow: 20px 20px 2px 0px #fed101;
+}
+.service-cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -70px;
+}
+.lock-photo3, .lock-photo4 {
+    position: relative;
+}
+.lock-photo4 {
+    top: -130px;
+    right: 70px;
+    box-shadow: 20px 20px 2px 0px #fed101;
+}
+.lock-photo3 {
+    left: 50px;
+    box-shadow: 20px 20px 2px 0px #fed101;
+}
+.red {
+    color: #D71313;
+}
+.services-cont {
+    display: flex;
+    flex-direction: column;
+    
+}
+.heading-services {
+    color: #D71313;
+    align-self: center;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-size: 30px;
+}
+.services-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.box {
+    width: 220px;
+    border: #0C134F 0.5px solid;
+    border-radius: 10px;
+    box-shadow: 15px 20px 2px 0px #fed101;
+    text-align: center;
+    padding: 3px;
+}
+.box:hover {
+    padding: 10px;
+}
+.box-heading {
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-size: 17px;
+}
+.par-service {
+    font-size: 14px;
+}
+p {
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-size: 17px;
+}
+h3 {
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+
+img {
+    border-radius: 10px;
+}
+.advantages-cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.advantages {
+   width: 50%;
+   padding: 10px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+.advantages-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.advantage-box {
+    border: solid 0.5px #0C134F ;
+    border-radius: 10px;
+    width: 270px;
+    height: 180px;
+    box-shadow: 15px 15px 2px 0px #fed101;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+.advantage-box:hover {
+    padding: 18px;
+}
+.callus-cont {
+    display: flex;
+    height: 100px;
+    margin-top: 50px;
+}
+.callus {
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.locaties-cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;   
+}
+.locatie-cont {
+    background-image: url("lock233.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    padding: 40px;
+    margin-top: 100px;
+}
+.heading-locaties {
+    color: #D71313;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    font-size: 30px;
+}
+.description-locaties {
+    color: white;
+    font-size: 25px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.list-locaties {
+    margin-top: 0;
+}
+.locatie-item {
+    font-size: 20px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.locaties-boxes {
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    background-color: #0C134F;
+}
+.footer-list {
+    font-size: 15px; 
+    color: #91C8E4;
+    text-decoration: none;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.footer-navigatie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo {
+    display: flex;
+}
+.footer-name {
+    padding: 10px;
+    color: #D71313;
+    font-size: 25px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.footer-lock {
+    margin-top: 10px;
+}
+.footer-adres {
+    color: white;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.about-description {
+    width: 700px;
+}
+.about-image {
+    box-shadow: 15px 15px 2px 0px #fed101;
+    margin-top: 50px;
+}
+.about-container-need  {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.need {
+    margin-right: 400px;
+    margin-top: 80px;
+}
+.about-heading {
+    color: #D71313;
+    font-size: 27px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.service-container {
+    width: 50%;
+    padding: 20px;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+iframe {
+    margin-top: 50px;
+}
+.contact-form {
+    margin-top: 100px;
+    background-color: #D71313;
+    padding: 20px;
+}
+.field {
+    height: 30px;
+    width: 400px;
+    border: none;
+}
+.contact-message {
+    width: 400px;
+    height: 50px;
+    border: none;
+}
+.contact-heading {
+    color: #D71313;
+    font-size: 40px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}  
+.footer-links {
+    text-decoration: none;
+    color: #0D1282;
+}
+.footer-links:hover {
+    color: #D71313;
+}
+.contact-link {
+    text-decoration: none;
+    color: black;
+}
+.contact-link:hover {
+    color: #0D1282;
+}
+.menu {
+    display: none;
+}
+.open {
+    display: flex !important;
+}
+.cont-gent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    margin-top: 50px;
+    padding: 10px;
+}
+.gent-item {
+    list-style: circle ;
+    color: #000;
+    font-weight: lighter;
+    font-size: 17px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.description-gent {
+    font-size: 18px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.heading-gent {
+    font-family: 'Adobe Garamond Pro', sans-serif;
+}
+.gent-par {
+    width: 700px;
+    padding: 0;
+}
+.nostyle {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Adobe Garamond Pro', sans-serif;
+    color: #91C8E4;
+}
+
+
+@media (max-width: 900px) {
+    .burger{
+        display: flex;
+    }
+    nav {
+        display: none; 
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: rgb(239, 239, 231);
+    }
+    .menu ul {
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    .header-cont{
+        margin-top: 0;
+        padding: 5px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .description {
+        font-size: 20px;
+    }
+    li{
+        font-size: 18px;
+    }
+    .form-header{
+        font-size: 18px;
+    }
+    .form-cont{
+        width: 500px;
+        margin-top: 20px;
+    }
+    input{
+        width: 200px;
+    }
+    .text-input{
+        width: 200px;
+    }
+    .lock-photo2 {
+        width: 150px;
+        top: -150px;
+        left: 230px;
+        box-shadow: 10px 10px 2px 0px #fed101;
+    }
+    .lock-photo1 {
+        width: 300px;
+        box-shadow: 10px 10px 2px 0px #fed101;
+    }
+    .experience {
+        width: 350px;
+        margin-top: -50px;
+    }
+    .par {
+        width: 350px;
+        
+    }
+    .service-cont {
+        margin-top: 50px;
+    }
+    .lock-photo4 {
+        width: 200px;
+        top: -170px;
+        right: 70px;
+        box-shadow: 20px 20px 2px 0px #fed101;
+    }
+    .lock-photo3 {
+        width: 300px;
+        left: 50px;
+        box-shadow: 20px 20px 2px 0px #fed101;
+    }
+    .box {
+        width: 150px;
+        box-shadow: 10px 10px 2px 0px #fed101;
+    }
+    .box-img {
+        width: 150px;
+    }
+    
+    .advantages {
+        width: 100%;
+    }
+    .advantage-box {
+        width: 220px;
+        height: 170px;
+        box-shadow: 15px 15px 2px 0px #fed101;
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+    }
+    .about-image {
+        width: 300px;
+        height: 200px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .about-container {
+        margin-top: 0;
+        padding: 5px;
+    }
+    .about-description {
+        width: 500px;
+    }
+    .about-container-need  {
+        padding: 5px;
+        margin-left: 0px;
+        margin-top: 0;
+    }
+    .need {
+        margin-right: 0;
+    }
+    .services-container {
+        margin-top: 0;
+    }
+    .service-container {
+        width: 50%;
+        padding: 5px;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px) {
+    .name {
+        font-size: 20px;
+    }
+    .lock {
+        width: 80px;
+        height: 50px;
+    }
+    .callNow {
+        width: 180px;
+        height: 30px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .main-cont {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    li {
+        color: white;
+        font-weight: bold;
+    }
+    .list {
+        color: white;
+        font-weight: bold;
+    }
+    
+    .form-cont {
+        width: 350px;
+        margin-top: 120px;
+    }
+    .experience-cont {
+        flex-direction: column;
+    }
+    .service-cont {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .heading-services {
+        font-size: 22px;
+        align-self: flex-start;
+    }
+    .services-box {
+        flex-direction: column;
+    }
+    .box {
+        width: 220px;
+        box-shadow: 10px 10px 2px 0px #fed101;
+        margin: 10px;
+    }
+    .box-img {
+        width: 220px;
+    }
+    .heading-locaties {
+        font-size: 22px;
+    }
+    .description-locaties {
+        font-size: 18px;
+    }
+    .advantages-cont {
+        flex-direction: column;
+        padding: 0;
+    }
+    .advantages {
+        padding: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    p {
+        font-size: 15px;
+    }
+    .footer-cont {
+        flex-direction: column;
+        padding: 0;
+    }
+    .footer-name {
+        font-size: 20px;
+    }
+    .footer-lock {
+        width: 90px;
+        height: 60px;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+    .about-description {
+        width: 100%;
+    }
+    .about-container-need {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .need {
+        margin-top: 5px;
+    }
+    .services-container {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .service-container {
+        width: 100%;
+    }
+    .about-image {
+        margin-top: 0;
+    }
+    iframe {
+        width: 300px;
+        height: 250px;
+    }
+    .lock-photo2 {
+        width: 150px;
+        top: -140px;
+        left: 150px;
+        box-shadow: 10px 10px 2px 0px #fed101;
+    }
+    .lock-photo1 {
+        width: 250px;
+        box-shadow: 10px 10px 2px 0px #fed101;
+    }
+    .lock-photo4 {
+        width: 150px;
+        top: -130px;
+        right: 10px;
+        box-shadow: 10px 10px 2px 0px #fed101;
+    }
+    .lock-photo3 {
+        width: 250px;
+        left: 50px;
+        box-shadow: 10px 10px 2px 0px #fed101;
+    }
+    .description {
+        font-size: 18px;
+        width: 300px;
+    }
+    ul {
+    padding: 0;
+    }
+.contact-heading {
+    font-size: 25px;
+    }
+.contact-form {
+    width: 300px;
+    }
+.form-group {
+    width: 250px;
+    }
+.field {
+    width: 250px;
+    }
+.contact-message {
+    width: 250px;
+}
+.home-cont {
+    width: 100%;
+}
+.locatie-cont {
+    width: 360px;
+    padding: 10px;
+}
+.buttons-cont {
+    margin-top: 140px;
+}
+.cont-gent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 450px;
+}
+.heading-gent {
+    font-size: 18px;
+}
+.description-gent {
+    font-size: 15px;
+}
+.gent-item {
+    font-size: 14px;
+}
+.gent-par {
+    width: 450px;
+}
+.container-gent {
+    margin-top: 50px;
+}
+}
+

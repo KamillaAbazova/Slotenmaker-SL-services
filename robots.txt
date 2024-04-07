@@ -1,0 +1,5 @@
+# All robots allowed
+User-agent: *
+Disallow: 
+
+Sitemap: https://slotenmaker-sl.com/sitemap.xml
