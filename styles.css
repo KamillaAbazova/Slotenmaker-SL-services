@@ -840,26 +840,26 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 400px;
+    width: 360px;
 }
 .heading-gent {
     font-size: 18px;
 }
 .description-gent {
     font-size: 15px;
-    width: 400px;
+    width: 360px;
 }
 .gent-item {
     font-size: 14px;
 }
 .gent-par {
-    width: 400px;
+    width: 360px;
 }
 .container-gent {
     margin-top: 50px;
 }
 .gentlist-mobile {
-    width: 400px;
+    width: 360px;
 }
 }
 
