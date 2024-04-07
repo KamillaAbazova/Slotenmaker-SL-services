@@ -840,20 +840,20 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 300px;
+    width: 400px;
 }
 .heading-gent {
     font-size: 18px;
 }
 .description-gent {
     font-size: 15px;
-    width: 300px;
+    width: 400px;
 }
 .gent-item {
     font-size: 14px;
 }
 .gent-par {
-    width: 300px;
+    width: 400px;
 }
 .container-gent {
     margin-top: 50px;
